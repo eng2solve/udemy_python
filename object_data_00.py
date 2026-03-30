@@ -16,6 +16,9 @@ for x in range (0,3):
     my_list.append(0)
 print(my_list)
 
+# method3
+print([0]*3)
+
 # Reassign 'hello' in this nested list to say 'goodbye' instead:
 list3 = [1,2,[3,4,'hello']]
 list3[2][2]='goodbye'
@@ -41,6 +44,7 @@ d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
 print(d['k1'][2]['k2'][1]['tough'][2][0])
 
 # Can you sort a dictionary? Why or why not
+# Answer: No! Because normal dictionaries are mappings not a sequence. 
 # In Python, dictionaries themselves cannot be sorted in-place, but you can obtain a new dictionary with its items sorted by keys or values
 my_dict = {'banana': 3, 'apple': 4, 'pear': 1, 'orange': 2}
 sorted_by_key = dict(sorted(my_dict.items(),reverse=True))
